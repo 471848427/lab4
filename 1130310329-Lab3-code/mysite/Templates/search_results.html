@@ -1,0 +1,13 @@
+﻿<p>您搜索的是: <strong>{{ query }}</strong></p>
+{% if book %}    
+	<p>发现{{ book|length }} 本书.</p>    
+	<ul>        
+	{% for books in book %}        
+		<li><a href="get/{{books.ISBN}}/" </a>{{books.Title}}</li>        
+	{% endfor %}    
+	</ul> 
+{% else %}    
+	<p>没有书籍匹配您的搜索</p> 
+	<p><a href="/search/"><input type="button" value="返回搜索"></a></p>
+	<p><a href="/home/"><input type="button" value="返回主页"></a></p>
+{% endif %}

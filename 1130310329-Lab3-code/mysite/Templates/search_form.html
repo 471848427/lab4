@@ -1,0 +1,17 @@
+﻿<html> 
+<head>    
+	<title>按作者查询</title> 
+</head> 
+<body>    
+	<h1>按作者查询</h1>
+	<p>请输入作者姓名</p>
+	{% if error %}
+		<p style="color: red;">请输入一个搜索条目</p>
+	{% endif %}
+	<form action="" method="get">        
+		<input type="text" name="q">        
+		<input type="submit" value="查询"> 
+	<a href="/home/"><input type="button" value="返回主页"></a>   
+</form> 
+</body> 
+</html>

@@ -1,0 +1,28 @@
+﻿<html>
+<head></head>
+<body>
+
+	<h1>新增书籍</h1>
+	<form action="" method="post">
+		{% csrf_token %}
+		<p>ISBN</p>
+		<input type="text" name="isbn">
+		<p>标题</p>
+		<input type="text" name="title">
+		<p>作者</p>
+		<input type="text" name="author">
+		<p>出版商</p>
+		<input type="text" name="publisher">
+		<p>出版日期</p>
+		<input type="text" name="publishdate">
+		<p>价格</p>
+		<input type="text" name="price">
+		<p><input type="submit" value="确认提交"></p>	
+		
+
+</from>
+
+		<p><a href="/home/"><input type="button" value="返回主页"></a></p>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+﻿<html>
+<title>添加作者</title>
+<head>添加作者</head>
+<body>
+	<form action="/add_author/" method="post">
+	{% csrf_token %}
+	<p>作者ID</p>
+	<input type="text" name="author">
+	<p>姓名</p>
+	<input type="text" name="nam">
+	<p>年龄</p>
+	<input type="text" name="age">
+	<p>国籍</p>
+	<input type="text" name="country">
+	<p><input type="submit" value="确认提交"></a></p>
+	
+</form>
+</body>
+</html>

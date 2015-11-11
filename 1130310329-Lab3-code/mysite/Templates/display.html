@@ -1,0 +1,28 @@
+﻿<html>
+<head>图书信息</head>
+<body>
+	<u2>
+		
+		<li>ISBN:{{book.ISBN}}</li>
+		<li>标题:{{book.Title}}</li>
+		<li>作者编号:{{book.AuthorID.AuthorID}}</li>
+		<li>出版商:{{book.Publisher}}</li>
+		<li>出版日期:{{book.PublishDate}}</li>
+		<li>价格:{{book.Price}}</li>
+	</u2>
+	<a href= "/delete/{{book.ISBN}}/"><input type="button" value="删除该书籍"></a>
+
+
+	<p>作者信息</p>
+	<u1>
+		
+		<li>编号:{{author.AuthorID}}</li>
+		<li>姓名:{{author.Name}}</li>
+		<li>年龄:{{author.Age}}</li>
+		<li>国籍:{{author.Country}}</li>
+		
+	</u1>
+	<a href="/search/"><input type="button" value="返回搜索"></a>
+	<a href="/home/"><input type="button" value="返回主页"></a>
+</body>
+</html>
